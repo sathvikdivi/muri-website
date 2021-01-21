@@ -2212,17 +2212,17 @@
 			padding: 3em 1.5em;
 		}
 
-			.box.focus h3 {
-				margin: 1em 0;
-			}
+		.box h3 {
+			margin: 1em 0;
+		}
 
-			.box.focus .image {
-				margin-bottom: .5em;
-			}
+		.box .image {
+			margin-bottom: .5em;
+		}
 
-				.box.focus .image img {
-					max-width: 100%;
-				}
+			.box .image img {
+				max-width: 100%;
+			}
 
 /* Icon */
 

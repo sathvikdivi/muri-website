@@ -34,89 +34,89 @@
 						<h2>Contributors</h2>
 						<p>Find labs and individuals who are contributing to the Impulsive MURI</p>
 						<h3>Filter by Focus Area</h3>
-						<p><a href = "#" class="focus-area-select-all">All</a> | <a href = "#" class="focus-area-selector">Skepticism</a> | <a href = "#" class="focus-area-selector">Cringing</a> | <a href = "#" class="focus-area-selector">Resignation</a> | <a href = "#" class="focus-area-selector">Escapism</a></p>
+						<p><a href = "#" class="focus-area-select-all">All</a> | <a href = "#" class="focus-area-selector">Energy Delivery</a> | <a href = "#" class="focus-area-selector">Energy Storage</a> | <a href = "#" class="focus-area-selector">Control</a> | <a href = "#" class="focus-area-selector">Repeatability</a></p>
 					</header>
 					
 		<!-- Content -->
 					<section id="focus-areas" class="special">
 						<div class="flex flex-4">
-							<div class="box area-skepticism">
+							<div class="box area-energy-delivery">
 								<div class="image round">
 									<img src="images/pic03.jpg" alt="Person 1" />
 								</div>
-								<h3>Skeptcism</h3>
+								<h3>Energy Delivery</h3>
 								<footer>
-									<a href="skepticism.html" class="button">Visit</a>
+									<a href="energy-delivery.html" class="button">Visit</a>
 								</footer>
 							</div>
-							<div class="box area-cringing area-skepticism">
+							<div class="box area-energy-storage">
 								<div class="image round">
 									<img src="images/pic04.jpg" alt="Person 2" />
 								</div>
-								<h3>Cringing</h3>
+								<h3>Energy Storage</h3>
 								<footer>
 									<a href="#" class="button">Visit</a>
 								</footer>
 							</div>
-							<div class="box area-resignation">
+							<div class="box area-control">
 								<div class="image round">
 									<img src="images/pic05.jpg" alt="Person 3" />
 								</div>
-								<h3>Resignation</h3>
+								<h3>Control</h3>
 								<footer>
 									<a href="#" class="button">Visit</a>
 								</footer>
 							</div>
-							<div class="box area-escapism">
+							<div class="box area-repeatability area-control">
 								<div class="image round">
 									<img src="images/pic06.jpg" alt="Person 4" />
 								</div>
-								<h3>Escapism</h3>
+								<h3>Repeatability</h3>
 								<footer>
 									<a href="#" class="button">Visit</a>
 								</footer>
 							</div>
-							<div class="box area-escapism">
+							<div class="box area-repeatability area-control">
 								<div class="image round">
 									<img src="images/pic06.jpg" alt="Person 4" />
 								</div>
-								<h3>Escapism</h3>
+								<h3>Repeatability</h3>
 								<footer>
 									<a href="#" class="button">Visit</a>
 								</footer>
 							</div>
-							<div class="box area-escapism">
+							<div class="box area-repeatability area-control">
 								<div class="image round">
 									<img src="images/pic06.jpg" alt="Person 4" />
 								</div>
-								<h3>Escapism</h3>
+								<h3>Repeatability</h3>
 								<footer>
 									<a href="#" class="button">Visit</a>
 								</footer>
 							</div>
-							<div class="box area-escapism">
+							<div class="box area-repeatability area-control">
 								<div class="image round">
 									<img src="images/pic06.jpg" alt="Person 4" />
 								</div>
-								<h3>Escapism</h3>
+								<h3>Repeatability</h3>
 								<footer>
 									<a href="#" class="button">Visit</a>
 								</footer>
 							</div>
-							<div class="box area-escapism">
+							<div class="box area-repeatability area-control">
 								<div class="image round">
 									<img src="images/pic06.jpg" alt="Person 4" />
 								</div>
-								<h3>Escapism</h3>
+								<h3>Repeatability</h3>
 								<footer>
 									<a href="#" class="button">Visit</a>
 								</footer>
 							</div>
-							<div class="box area-escapism">
+							<div class="box area-repeatability area-control">
 								<div class="image round">
 									<img src="images/pic06.jpg" alt="Person 4" />
 								</div>
-								<h3>Escapism</h3>
+								<h3>Repeatability</h3>
 								<footer>
 									<a href="#" class="button">Visit</a>
 								</footer>
@@ -144,7 +144,7 @@
 						
 			<script>
 				$(".focus-area-selector").click(function(){
-					var area = $(this).text().toLowerCase();
+					var area = $(this).text().toLowerCase().replace(/\s/g , "-");
 					$(".box").hide();
 					$(".area-"+area).show();
 				});
