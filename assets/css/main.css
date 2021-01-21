@@ -17,6 +17,7 @@
 		font-size: 100%;
 		font: inherit;
 		vertical-align: baseline;
+		scroll-behavior: smooth;
 	}
 
 	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
@@ -1907,6 +1908,8 @@
 		.flex.flex-3 article {
 			position: relative;
 			width: 28%;
+			display: flex;
+			flex-direction: column;
 		}
 
 			.flex.flex-3 article:before {
@@ -1922,6 +1925,14 @@
 
 			.flex.flex-3 article:last-child:before {
 				border: none;
+			}
+			
+			.flex.flex-3 article p {
+				flex-grow: 1;
+			}
+			
+			.flex.flex-3 article h3 {
+				min-height: 3em;
 			}
 
 		.flex.flex-4 .box {
@@ -2196,20 +2207,20 @@
 			padding: 0;
 		}
 
-		.box.person {
+		.box.focus {
 			border: solid 1px rgba(255, 255, 255, 0.25);
 			padding: 3em 1.5em;
 		}
 
-			.box.person h3 {
-				margin: 0;
+			.box.focus h3 {
+				margin: 1em 0;
 			}
 
-			.box.person .image {
-				margin-bottom: 1em;
+			.box.focus .image {
+				margin-bottom: .5em;
 			}
 
-				.box.person .image img {
+				.box.focus .image img {
 					max-width: 100%;
 				}
 
@@ -2717,14 +2728,19 @@
 
 		.subpage #header {
 			background: #5385c1;
+			color: #d4e0ef;
 			top: 0;
 			height: 44px;
 			line-height: 44px;
 			position: fixed;
 		}
+		
+			.subpage #header a:hover {
+				color: #ffffff;
+			}
 
 	#header {
-		color: #d4e0ef;
+		color: #5385c1;
 		cursor: default;
 		height: 3.25em;
 		left: 0;
@@ -2768,7 +2784,7 @@
 		}
 
 			#header a:hover {
-				color: #ffffff;
+				color: #0b2b51;
 			}
 
 			#header a:last-child {
@@ -2934,13 +2950,14 @@
 
 	#banner {
 		padding: 12em 0 10em 0;
-		background-image: url('../../images/banner.jpg');
-		background-size: cover;
+		background-image: url('../../images/banner.png');
+		background-size: contain;
 		background-position: top;
-		background-attachment: fixed;
+		background-attachment: scroll;
 		background-repeat: no-repeat;
 		text-align: center;
 		border-top: 0.5em solid #5385c1;
+		min-height: 30em;
 	}
 
 		#banner h1 {
@@ -2958,46 +2975,6 @@
 			margin-bottom: 1.75em;
 		}
 
-		@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
-
-			#banner {
-				background-attachment: scroll;
-			}
-
-		}
-
-		@media screen and (max-width: 1280px) {
-
-			#banner {
-				padding: 10em 2em 8em 2em;
-			}
-
-		}
-
-		@media screen and (max-width: 980px) {
-
-			#banner {
-				background-attachment: scroll;
-			}
-
-		}
-
-		@media screen and (max-width: 736px) {
-
-			#banner {
-				padding: 8em 1.5em 6em 1.5em;
-			}
-
-				#banner h1 {
-					font-size: 2.5em;
-				}
-
-				#banner p {
-					font-size: .9em;
-				}
-
-		}
-
 		@media screen and (max-width: 480px) {
 
 			#banner {
@@ -3005,6 +2982,44 @@
 			}
 
 		}
+		
+/* Newsroll */
+
+	.newsroll h2 {
+		margin-bottom: 0;
+		border-top: 1px solid #dbdbdb;
+	}
+
+		.newsroll h2:first-child {
+			border-top: 0;
+		}
+
+	.newsroll h3 {
+		margin-bottom: 0;
+	}
+
+	.newsroll p {
+		margin-bottom: 1em;
+	}
+
+	.newsroll footer {
+		margin-bottom: 1.5em;
+	}
+		
+/* Focus Areas */
+
+	#focus-areas .flex.flex-4 {
+		-moz-justify-content: space-around;
+		-webkit-justify-content: space-around;
+		-ms-justify-content: space-around;
+		justify-content: space-around;
+	}
+		
+/* Main */
+
+	#main .inner {
+		clear: both;
+	}
 
 /* Footer */
 
