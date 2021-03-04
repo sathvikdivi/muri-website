@@ -3154,3 +3154,11 @@
 	@media only screen and (max-width: 300px) {
 	  .text {font-size: 11px}
 	}
+	
+/* Image centering - about page*/	
+	.imgcenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
