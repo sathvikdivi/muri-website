@@ -5,12 +5,16 @@
 	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
 -->
 <html>
+	
 	<head>
 		<title>MURI Publications</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" href="assets/css/main.css" />		
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/publications.css">
+		<!-- <link rel="stylesheet" href="assets/css/index.css">	 -->
 	</head>
+	
 	<body class="subpage">
 
 		<!-- Header -->
@@ -28,35 +32,25 @@
 					<a href="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span></a>
 				</div>
 			</header>
-
+			
+			<!-- <div id="header2"></div> -->
+			<!-- <div class="pageTitle_wrapper"> -->
+				<!-- <img src="images/circuit.svg" class="circuit left"/> -->
+				<!-- <div class="page_title">MURI Publications</div> -->
+				<!-- <img src="images/circuit.svg" class="circuit right"> -->
+			<!-- </div> -->
 		<!-- Main -->
+
 			<section id="main" class="wrapper">
 				<div class="inner">
 					<header class="align-center">
 						<h2>MURI Publications</h2>
-					</header>						
-						<article>
-							<p><a href="https://www.nature.com/articles/s41563-020-00909-w#Ack1" class="off">Autonomous snapping and jumping polymer gels</a> <br> Kim et al. 2021 </p>
-							<p><a href="https://www.sciencedirect.com/science/article/abs/pii/S0960982220318777" class="off">Snaps of a tiny amphipod push the boundary of ultrafast, repeatable movement</a> <br> Longo et al. 2021 </p>
-							<p><a href="https://jeb.biologists.org/content/early/2021/01/27/jeb.232157" class="off">Pendulum-based measurements reveal impact dynamics at the scale of a trap-jaw ant</a> <br> Jorge et al. 2021 </p>
-							<p><a href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.125.108002" class="off">Programming Impulsive Deformation with Mechanical Metamaterials</a> <br> Liang and Crosby 2020 </p>
-							<p><a href="https://royalsocietypublishing.org/doi/10.1098/rsif.2020.0070" class="off">Latch-based control of energy output in spring actuated systems</a> <br> Divi et al. 2020 </p>
-							<p><a href="https://ieeexplore.ieee.org/document/9050920" class="off">Tunable Multi-Modal Locomotion in Soft Dielectric Elastomer Robots</a> <br> Duduta et al. 2020 </p>
-							<p><a href="https://www.sciencedirect.com/science/article/abs/pii/S2352431620300122" class="off">Uniaxial stretching mechanics of cellular flexible metamaterials</a> <br> Liang and Crosby 2020 </p>
-							<p><a href="https://besjournals.onlinelibrary.wiley.com/doi/10.1111/1365-2435.13545" class="off">What explains vast differences in jumping power within a clade? Diversity, ecology and evolution of anuran jumping power</a> <br> Mendoza et al. 2020 </p>
-							<p><a href="https://pubs.rsc.org/en/content/articlelanding/2019/sm/c9sm00870e#!divAbstract" class="off">The effect of size-scale on the kinematics of elastic energy release</a> <br> Ilton et al. 2019 </p>
-							<p><a href="https://www.sciencedirect.com/science/article/pii/S0960982219308796" class="off">The high speed radular prey strike of a fish-hunting cone snail</a> <br> Schulz et al. 2019 </p>
-							<p><a href="https://iopscience.iop.org/article/10.1088/1361-665X/ab3537/meta" class="off">Electrically-latched compliant jumping mechanism based on a dielectric elastomer actuator</a> <br> Duduta et al. 2019 </p>
-							<p><a href="https://jeb.biologists.org/content/222/15/jeb197889" class="off">Beyond power amplification: latch-mediated spring actuation is an emerging framework for the study of diverse elastic systems</a> <br> Longo et al. 2019 </p>
-							<p><a href="https://academic.oup.com/icb/article/59/6/1609/5545545" class="off">Why do Large Animals Never Actuate Their Jumps with Latch-Mediated Springs? Because They can Jump Higher Without Them</a> <br> Sutton et al. 2019 </p>
-							<p><a href="https://academic.oup.com/icb/article/59/6/1515/5545521" class="off">Modeling the Determinants of Mechanical Advantage During Jumping: Consequences for Spring- and Muscle-Driven Movement</a> <br> Olberding et al. 2019 </p>
-							<p><a href="https://jeb.biologists.org/content/222/15/jeb201129" class="off">Adhesive latching and legless leaping in small, worm-like insect larvae</a> <br> Farley et al. 2019 </p>
-							<p><a href="https://academic.oup.com/icb/article/59/6/1573/5531653" class="off">The Power of Mantis Shrimp Strikes: Interdisciplinary Impacts of an Extreme Cascade of Energy Release</a> <br> Patek 2019 </p>
-							<p><a href="https://academic.oup.com/icb/article/59/6/1535/5505430" class="off">Compliant Substrates Disrupt Elastic Energy Storage in Jumping Tree Frogs</a> <br> Reynaga et al. 2019 </p>
-							<p><a href="https://science.sciencemag.org/content/360/6387/eaao1082.editor-summary" class="off">The principles of cascading power limits in small, fast biological and engineered systems</a> <br> Ilton et al. 2018</p>
-						</article>
-				</div>
-			</section>
+					</header>
+					<div class="muri-grid" style=" margin:0 auto;">
+						<div id="papers" class="col-xs-12"></div>
+					</div>	
+				</div>					
+			</section>	
 			
 		<!-- Footer -->
 			<footer id="footer">
@@ -74,6 +68,61 @@
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+		
+		<!--Contains the list of publications-->
+		<script src="assets/js/publications.js?v=1.2"></script> 
+		
+		<!--Script to load the publications in the desired manner. Code taken from mrl's website-->
+		<script>
+			function loadPapers() {
+				let types = Object.keys(papers);
+				let page = document.createElement("div");
+				page.classList.add("muri-grid")
+
+				for (let type of types) {
+
+					let year = document.createElement("div");
+					let paperWrapper = document.createElement("div");
+
+					year.classList.add("year");
+					year.classList.add("col-xs-12");
+					year.classList.add("col-sm-2");
+					year.classList.add("col-md-1")
+					paperWrapper.classList.add("paper");
+					paperWrapper.classList.add("col-xs-12");
+					paperWrapper.classList.add("col-sm-10");
+					paperWrapper.classList.add("col-md-11");
+
+					year.innerText = type.slice(1)
+					page.appendChild(year);
+
+					for (let paper of papers[type]) {
+						let paperInfo = document.createElement("div");
+						paperInfo.classList.add("paper-info");
+						paperInfo.innerHTML = paper.authors.join(", ") + ', <a target = "_blank"  rel="noopener noreferrer" href=' + paper.link + '>"' + paper.title + '"</a> <i class = ' + "paper-journal'>" + paper.journal + "</i>, " + paper.page
+
+						if (paper.event) {
+							paperInfo.classList.add("top-margin")
+							let event = document.createElement("event");
+							event.classList.add("paper-event");
+							event.innerText = paper.event;
+							paperInfo.appendChild(event);
+						}
+						paperWrapper.appendChild(paperInfo);
+					}
+					page.appendChild(paperWrapper);
+				}
+
+				let parent = document.getElementById("papers")
+				parent.appendChild(page)
+			}
+
+			loadPapers()
+			loadHeader("publications")
+		</script>
 			
 	</body>
+	
+
+	
 </html>

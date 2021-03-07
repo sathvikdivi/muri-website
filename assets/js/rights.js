@@ -1,0 +1,1 @@
+document.getElementById("copyright").innerText = "â“’ 2020. Microrobotics Laboratory";
