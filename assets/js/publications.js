@@ -17,7 +17,7 @@ const papers =  {
         image: "images/",
         authors: ["J.F.Jorge", "S. Bergbreiter", "S.N. Patek"],
         title: "Pendulum-based measurements reveal impact dynamics at the scale of a trap-jaw ant", 
-        link: "https://ieeexplore.ieee.org/abstract/document/9174776",
+        link: "https://jeb.biologists.org/content/224/5/jeb232157",
         journal: "Journal of Experimental Biology",
         page:"jeb.232157, doi: 10.1242/jeb.232157.",
 		doi: ""
