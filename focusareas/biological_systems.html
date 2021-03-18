@@ -10,6 +10,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="../assets/css/main.css" />
+		<link rel="stylesheet" href="../assets/css/publications.css"> <!--For relevant publications section-->
 	</head>
 	<body class="subpage">
 
@@ -36,14 +37,17 @@
 					</header>
 					
 		<!-- Content -->
-		<!-- Add other images here later...Update related publications below the text...-->	
-					<img src="../images/focusareaimages/biological_systems/FarleyEtAl2019JEB_Midge.jpg" alt=""style="float:left; width:50%; padding: 0em 2em 1em 0em;"> <!--Padding order: top right bottom left-->
+					<img src="../images/focusareaimages/biological_systems/FarleyEtAl2019JEB_Midge.jpg" alt=""style="float:left; width:40%; padding: 0em 2em 1em 0em;"> <!--Padding order: top right bottom left-->
 					<p> 
-					 Biological systems produce extraordinarily fast, small, repeated-use movements for myriad uses - from puncture to projectile launch.  Underlying these capabilities is the principled, mechanical framework of the MURI team - latch-mediated spring actuation (LaMSA).  LaMSA encompasses systems that primarily use elastic recoil to power movement and latches to mediate the transformation of elastic to kinetic energy.  Our team has illuminated numerous LaMSA biological systems.  In the sea, minute coastal crustaceans - amphipods - generate one of the fastest, repeatable movements in the aquatic world.  Cone snails pressurize venom behind a roughly 3 mm harpoon-shaped tooth to launch it into a fish or prey item with accelerations similar to a bullet. On land, squishy legless, larval gall midges store elastic energy in their body, use an adhesive patch of hairs as a latch, and then fling themselves 30 body lengths into the air by rapidly uncurling their body.  Trap-jaw ants use dual-elastic recoil to store elastic energy in their head capsule which recoils to slam closed their mandibles to either capture prey or launch their own body into the air.  These systems generate unimaginable accelerations - with trap-jaw ant mandibles exceeding the acceleration of a bullet in a gun by an order of magnitude.
+					Biological systems produce extraordinarily fast, small, repeated-use movements for myriad uses - from puncture to projectile launch.  Even as the kinematics of these systems are impressive, the underlying mechanisms and general physical principles of repeated-use, latch-mediated spring actuation are the primary focus of our biological investigations.  With this lens, we probe these systems experimentally to determine the mechanisms and pathways of energy flow within their mechanical systems, between these systems and their environment, and across their evolutionary diversity.
 					</p>
-					<p>
-					Even as the kinematics of these systems are impressive, the underlying mechanisms and general physical principles of repeated-use, latch-mediated spring actuation are the primary focus of the biologists on the team.  With this lens, we probe these systems experimentally to determine the mechanisms and pathways of energy flow within their mechanical systems and between these systems and their environment.  For example, when considering the body-weight latch and spring actuation of frog jumps off of realistic compliant substrates, we discovered the tunability and robustness of the jumps across diverse habitats and evolutionary history.  We push the boundaries of scientific discovery through novel applications of state-of-the art methodologies such as high-speed videography and 3D imaging, and also developing new devices for tracking energy flow in otherwise undetectable movements, such as a pendulum impact tester that measures the impact energetics of trap-jaw ants striking targets that match variable environmental substrates.  Additionally, we translate LaMSA principles to experiment with systems beyond animals, and systems that are not repeated-use.  For example, many plant and fungal systems are single-use LaMSA systems which use springs and latches to shoot spores, seeds, or other propagules at similar or greater accelerations than animal systems.  These contrasts between single use and repeated-use LaMSA systems are now beginning to inform the limits of repeatable movement.  
-					</p>
+				</div>
+				
+				<div class = "inner">	
+					<h3 class="align-center">Relevant Publications</h3>		
+					<div class="muri-grid" style=" margin:0 auto;">
+						<div id="papers" class="col-xs-12"></div>
+					</div>	
 				</div>
 
 		<!-- Footer -->
@@ -62,6 +66,58 @@
 			<script src="../assets/js/skel.min.js"></script>
 			<script src="../assets/js/util.js"></script>
 			<script src="../assets/js/main.js"></script>
+			
+			<!--Contains the list of relevant publications-->
+			<script src="../assets/js/biological_systems_publications.js?v=1.2"></script> 
 
+			<!--Script to load the publications in the desired manner. Code taken from mrl's website-->
+			<script>
+				function loadPapers() {
+					let types = Object.keys(papers);
+					let page = document.createElement("div");
+					page.classList.add("muri-grid")
+
+					for (let type of types) {
+
+						let year = document.createElement("div");
+						let paperWrapper = document.createElement("div");
+
+						year.classList.add("year");
+						year.classList.add("col-xs-12");
+						year.classList.add("col-sm-2");
+						year.classList.add("col-md-1")
+						paperWrapper.classList.add("paper");
+						paperWrapper.classList.add("col-xs-12");
+						paperWrapper.classList.add("col-sm-10");
+						paperWrapper.classList.add("col-md-11");
+
+						year.innerText = type.slice(1)
+						page.appendChild(year);
+
+						for (let paper of papers[type]) {
+							let paperInfo = document.createElement("div");
+							paperInfo.classList.add("paper-info");
+							paperInfo.innerHTML = paper.authors.join(", ") + ', <a target = "_blank"  rel="noopener noreferrer" href=' + paper.link + '>"' + paper.title + '"</a> <i class = ' + "paper-journal'>" + paper.journal + "</i>, " + paper.page
+
+							if (paper.event) {
+								paperInfo.classList.add("top-margin")
+								let event = document.createElement("event");
+								event.classList.add("paper-event");
+								event.innerText = paper.event;
+								paperInfo.appendChild(event);
+							}
+							paperWrapper.appendChild(paperInfo);
+						}
+						page.appendChild(paperWrapper);
+					}
+
+					let parent = document.getElementById("papers")
+					parent.appendChild(page)
+				}
+
+				loadPapers()
+				loadHeader("publications")
+			</script>	
+		
 	</body>
 </html>
