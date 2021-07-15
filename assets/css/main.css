@@ -3348,3 +3348,30 @@
     }
 }
 
+<style type="text/css">
+	.TFtable{
+		width:100%;
+		table-layout:fixed;  
+		border-collapse:collapse; 
+		text-align: left;
+		
+	}
+	.TFtable td{ 
+		padding:3px;
+		text-align: left;
+	}
+	/* provide some minimal visual accomodation for IE8 and below */
+	.TFtable tr{
+		background: #b8d1f3;
+	}
+	/*  Define the background color for all the ODD background rows  */
+	.TFtable tr:nth-child(odd){ 
+		background: #D7E8FE;
+	}
+	/*  Define the background color for all the EVEN background rows  */
+	.TFtable tr:nth-child(even){
+		background: #EBF4FE;
+	}
+	
+	
+</style>
