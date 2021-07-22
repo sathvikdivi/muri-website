@@ -1,5 +1,21 @@
 const papers =  {
- y2019: [{
+	y2021: [{
+        image: "images/",
+        authors: ["Jacob S. Harrison", "Megan L. Porter", "Matthew J. McHenry", "H. Eve Robinson", "S.N.Patek"],
+        title: "Scaling and development of elastic mechanisms: the tiny strikes of larval mantis shrimp", 
+        link: "https://doi.org/10.1242/jeb.235465",
+        journal: "Journal of Experimental Biology",
+        page:"https://doi.org/10.1242/jeb.235465." 
+    },	{
+        image: "images/",
+        authors: ["S.J. Longo", "W. Ray", "G.M. Farley", "J. Harrison", "J. Jorge", "T. Kaji", "A.R. Palmer", "S.N. Patek"],
+        title: "Snaps of a tiny amphipod push the boundary of ultrafast, repeatable movement", 
+        link: "https://www.sciencedirect.com/science/article/pii/S0960982220318777",
+        journal: "Current Biology",
+        page:"31(3), pp.R116-R117."
+    }
+
+ ], y2019: [{
         image: "images/",
         authors: ["Gregory P Sutton", "Elizabeth Mendoza", "Emanuel Azizi", "Sarah J Longo", "Jeffrey P Olberding", "Mark Ilton", "Sheila N Patek"],
         title: "Why do Large Animals Never Actuate Their Jumps with Latch-Mediated Springs? Because They can Jump Higher Without Them ",

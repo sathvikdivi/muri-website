@@ -1,6 +1,13 @@
 const papers =  {
     y2021: [{
         image: "images/",
+        authors: ["Jacob S. Harrison", "Megan L. Porter", "Matthew J. McHenry", "H. Eve Robinson", "S.N.Patek"],
+        title: "Scaling and development of elastic mechanisms: the tiny strikes of larval mantis shrimp", 
+        link: "https://doi.org/10.1242/jeb.235465",
+        journal: "Journal of Experimental Biology",
+        page:"https://doi.org/10.1242/jeb.235465." 
+    },{
+        image: "images/",
         authors: ["Yongkin Kim", "Jay van den Berg", "Alfred Crosby"],
         title: "Autonomous snapping and jumping polymer gels", 
         link: "https://www.nature.com/articles/s41563-020-00909-w",
