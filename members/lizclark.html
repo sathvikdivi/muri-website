@@ -1,84 +1,45 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <!-- <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors"> -->
-    <meta name="generator" content="Hugo 0.80.0">
-    <title>Liz Clark</title>
-
-    <!-- <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/carousel/"> -->
-
-    <link rel="stylesheet" href="../assets/css/main.css" />
-
-    <!-- Bootstrap core CSS -->
-	<!-- <link href="assets/strap/dist/css/bootstrap.min.css" rel="stylesheet"> -->
-
-    <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
-      }
-
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-	  
-	  .centerImg {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		margin-left: auto;
-		margin-right: auto;
-		text-align: center;
-	  }
-	  
-	  .personal_button {
-		background-color: #5385c1;
-		color: #ffffff;
-		width: 120px;
-		height: 40px;
-		border-radius: 10px;
-		text-align: center;
-		text-decoration: none;
-		display: inline-block;
-		font-size: 14px;
-		margin: 10px 0px 0px 0px;
-	  }
-
-	  .centerbutton {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		margin-left: auto;
-		margin-right: auto;
-		text-align: center;
-		padding-right: 10px;
-		padding-left: 10px;
-	  }
-	  
-	  @media all and (max-width:30em){
-		a.button1{
-			display:block;
-			margin:0.4em auto;
-		}
-	  }
-	  
-    </style>
-   
-    <!-- Custom styles for this template -->
-    <!-- <link href="carousel.css" rel="stylesheet"> -->
 	
-	<!-- <link rel="stylesheet" href="assets/font_awesome/css/font-awesome.min.css"> -->
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="">
+		<meta name="generator" content="Hugo 0.80.0">
+		<title>Liz Clark</title>
+		
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<style>
+			.centerImg {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				margin-left: auto;
+				margin-right: auto;
+				text-align: center;
+			}
+
+			.personal_button {
+				background-color: #5385c1;
+				color: #ffffff;
+				width: 160px;
+				height: 40px;
+				border-radius: 10px;
+				text-align: center;
+				text-decoration: none;
+				display: inline-block;
+				font-size: 15px;
+				margin: 10px 0px 0px 0px;
+			}
+			
+			.contain{
+				object-fit:contain;
+			}
+		</style>
+	</head>
 	
-  </head>
-  <body class="subpage">
+	<body class="subpage">
 		<!-- Header -->
 		<header id="header">
 			<div class="inner">
@@ -94,67 +55,58 @@
 				<a href="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span></a>
 			</div>
 		</header>    
-	
-	<main>
-	
-	<section id="main" class="wrapper">
-		<div class="inner">
-			<!-- <div class="container marketing"> -->
-				<div class="row featurette">
-				  <div class="col-md-4">
-					<!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg> -->
-					<!-- <img class="featurette-image img-fluid mx-auto centerImg" src="default_m.png" width="250" height="250"> -->
-					<img class="img-thumbnail centerImg" src="../images/memberimages/default_f.PNG" width="250" height="auto">
-					<div class="row">
-						<div class="col-md-2"></div>
-						<div class="col-md-4">
-							<button class="personal_button" onclick="window.open('https://www.elizabethgclark.com/','_blank')"><i class="fa fa-user fa-fw" aria-hidden="true"></i> LinkedIn</button>
+		
+		<main>
+			<section id="main" class="wrapper">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3">
+						<div class="row justify-content-center">
+							<img class="contain" src="../images/memberimages/default_f.PNG" style="width:80%">
 						</div>
-						<div class="col-md-4">
-							<button class="personal_button" onclick="window.open('https://scholar.google.com/citations?user=At9KmIwAAAAJ&hl=en','_blank')"><i class="fa fa-google fa-fw"  aria-hidden="true"></i> Scholar</button>
+						<br>
+						<div class="row justify-content-center">
+							<div class="col" align="center">
+								<button class="btn personal_button" onclick="window.open('https://www.elizabethgclark.com/','_blank')"><i class="fa fa-users fa-fw"  aria-hidden="true"></i>Website</button>
+							</div>
+							<div class="col" align="center">
+								<button class="btn personal_button" onclick="window.open('https://scholar.google.com/citations?user=At9KmIwAAAAJ&hl=en','_blank')"><i class="fa fa-google fa-fw" aria-hidden="true"></i>Scholar</button>
+							</div>
 						</div>
-						<div class="col-md-2"></div>
 					</div>
-				  </div>
-				  <div class="col-md-8">
+					<div class="col-md-9">
 						<h2>Liz Clark</h2>
 						<h4>Postdoctoral Researcher <br/> Duke University</h4>
-					<p class="lead" style="padding:0em 0em 0em 0em">  
-						I use cutting-edge technology to determine how biological structures function. My specialty is on the biomechanics of unusual forms of movement and locomotion. I analyze both living and fossil organisms, and I’ve worked on a range of topics from the mechanics of ancient reptile arms to how plants evolved the ability to move water up their stems. I employ a variety of tools, such as 3D imaging, digital biomechanical modeling, behavioral experiments, and computational fluid dynamics, to develop new methodologies for visualizing and understanding organismal motion. Throughout my career, I’ve worked with engineers to design and build novel devices that are inspired by the insights from my work.  
-						<br/>
-						As a postdoc at Duke, I worked as part of a DOD-funded research team to analyze the biomechanics of the fastest-moving organisms on the planet. As ultrafast organismal motion outperforms current engineering capabilities in terms of acceleration, efficiency and repeatability, our findings will be used to design the next generation of ultrafast synthetic systems.
-					</p>
-				  </div>
-
-				</div>
-
-				<!-- <hr class="featurette-divider"> -->
-
-			<!-- </div> -->
-		
-		</div>
-	</section>
-
-	<!-- Footer -->
-	<footer id="footer">
-		<div class="inner">
-			<div class="flex">
-				<div class="copyright">
-					&copy; US Army(?). Design: <a href="https://templated.co">TEMPLATED</a>.
+						<p class="lead" style="padding:0em 0em 0em 0em; font-size:16px;">  
+							I use cutting-edge technology to determine how biological structures function. My specialty is on the biomechanics of unusual forms of movement and locomotion. I analyze both living and fossil organisms, and I’ve worked on a range of topics from the mechanics of ancient reptile arms to how plants evolved the ability to move water up their stems. I employ a variety of tools, such as 3D imaging, digital biomechanical modeling, behavioral experiments, and computational fluid dynamics, to develop new methodologies for visualizing and understanding organismal motion. Throughout my career, I’ve worked with engineers to design and build novel devices that are inspired by the insights from my work.  
+							<br/>
+							As a postdoc at Duke, I worked as part of a DOD-funded research team to analyze the biomechanics of the fastest-moving organisms on the planet. As ultrafast organismal motion outperforms current engineering capabilities in terms of acceleration, efficiency and repeatability, our findings will be used to design the next generation of ultrafast synthetic systems.
+						</p>
+					</div>
 				</div>
 			</div>
-		</div>
-	</footer>
-	
-	</main>
-
-	<!-- Scripts -->
-	<script src="../assets/js/jquery.min.js"></script>
-	<script src="../assets/js/skel.min.js"></script>
-	<script src="../assets/js/util.js"></script>
-	<script src="../assets/js/main.js"></script>
-    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
- 
-  </body>
+			</section>
+			
+			<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+					<div class="flex">
+						<div class="copyright">
+							&copy; US Army(?). Design: <a href="https://templated.co">TEMPLATED</a>.
+						</div>
+					</div>
+				</div>
+			</footer>
+			
+		</main>
+		
+		<!-- Scripts -->
+		<script src="../assets/js/jquery.min.js"></script>
+		<script src="../assets/js/skel.min.js"></script>
+		<script src="../assets/js/util.js"></script>
+		<script src="../assets/js/main.js"></script>
+		<script src="../assets/dist/js/bootstrap.bundle.min.js"></script>		
+		
+	</body>
 	
 </html>
