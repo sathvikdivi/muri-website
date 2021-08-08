@@ -9,31 +9,60 @@
 		<title>Focus Areas</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" href="assets/css/main.css" />
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" rel="stylesheet">			
+		<link rel="stylesheet" href="assets/css/main.css" />		
+
+		<style>	
+			/*This is for nav-bar*/
+			.bg-custom1{
+				background-color: #5385c1;
+			}
+			/*This is for images*/
+			.contain{
+				object-fit:contain;
+			}
+		</style>
 	</head>
 	<body class="subpage">
 
-		<!-- Header -->
-			<header id="header">
-				<div class="inner">
-					<a href="index.html" class="logo">Impulsive MURI</a>
-					<nav id="nav">
-						<a href="about.html">About</a>
-						<a href="focusareas.html">Focus Areas</a>
-						<a href="news.html">News</a>
-						<a href="publications.html">Publications</a>
-						<a href="members.html">Members</a>
-						<a href="symposium2022.html">Symposium 2022</a>
-					</nav>
-					<a href="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span></a>
-				</div>
-			</header>
+		<!-- Navigation -->
+		<nav class="navbar navbar-expand-lg navbar-dark bg-custom1 shadow fixed-top">
+		  <div class="container">
+			<a class="navbar-brand" href="index.html">Impulsive MURI</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+			  <span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarResponsive">
+			  <ul class="navbar-nav ms-auto">
+				<li class="nav-item">
+				  <a class="nav-link" href="about.html">About</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" href="focusareas.html">Focus Areas</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" href="news.html">News</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" href="publications.html">Publications</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="members.html">Members</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="symposium2022.html">Symposium 2022</a>
+				</li>
+			  </ul>
+			</div>
+		  </div>
+		</nav>
 
 		<!-- Main -->
 			<section id="main" class="wrapper">
 				<div class="inner">
 					<header class="align-center">
-						<h2>Focus Areas</h2>
+						<h2 class="fw-normal">Focus Areas</h2>
 						<p> Click on the specific areas below to learn more about them.</p>
 					</header>
 					
@@ -42,46 +71,46 @@
 					<section id="focus-areas" class="special">
 						<div class="flex flex-4">
 							<div class="box">
-								<div class="image round">
-									<img src="images/focusareaimages/mantisshrimp.png" alt="Area 1" height="200" />
+								<div class="image">
+									<img class="contain" src="images/focusareaimages/mantisshrimp.png" alt="Area 1" width="200" height="200" />
 								</div>
-								<h3>Energy Flow</h3>
+								<h3 class="fw-normal">Energy Flow</h3>
 								<footer>
 									<a href="focusareas/energyflow.html" class="button">Visit</a>
 								</footer>
 							</div>
 							<div class="box">
-								<div class="image round">
-									<img src="images/focusareaimages/GrasshopperJumping_Resized.png" alt="Area 2" height="200"/>
+								<div class="image">
+									<img class="contain" src="images/focusareaimages/GrasshopperJumping_Resized.png" alt="Area 2" width="200" height="200"/>
 								</div>
-								<h3>Principles</h3>
+								<h3 class="fw-normal">Principles</h3>
 								<footer>
 									<a href="focusareas/principles.html" class="button">Visit</a>
 								</footer>
 							</div>
 							<div class="box">
-								<div class="image round">
-									<img src="images/focusareaimages/jumpingcones.jpg" alt="Area 3" height="200"/>
+								<div class="image">
+									<img class="contain" src="images/focusareaimages/size_scale/SizeScale2.png" alt="Area 3" width="200" height="200"/>
 								</div>
-								<h3>Size & Scale</h3>
+								<h3 class="fw-normal">Size & Scale</h3>
 								<footer>
 									<a href="focusareas/size_scale.html" class="button">Visit</a>
 								</footer>
 							</div>
 							<div class="box">
-								<div class="image round">
-									<img src="images/focusareaimages/GrasshopperJumping_Resized.png" alt="Area 4" height="200"/>
+								<div class="image">
+									<img class="contain" src="images/focusareaimages/size_scale/fleatest_v1.gif" width="200" height="200"/>
 								</div>
-								<h3>Biological Systems</h3>
+								<h3 class="fw-normal">Biological Systems</h3>
 								<footer>
 									<a href="focusareas/biological_systems.html" class="button">Visit</a>
 								</footer>
 							</div>
 							<div class="box">
-								<div class="image round">
-									<img src="images/focusareaimages/jumperleaf2.png" alt="Area 4" height="200"/>
+								<div class="image">
+									<img class="contain" src="images/focusareaimages/jumperleaf2.png" alt="Area 4" width="200" height="200"/>
 								</div>
-								<h3>Engineered Systems</h3>
+								<h3 class="fw-normal">Engineered Systems</h3>
 								<footer>
 									<a href="focusareas/engineered_systems.html" class="button">Visit</a>
 								</footer>
