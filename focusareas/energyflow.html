@@ -9,11 +9,23 @@
 		<title>Energy Flow</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" rel="stylesheet">			
 		<link rel="stylesheet" href="../assets/css/main.css" />
 		<link rel="stylesheet" href="../assets/css/publications.css" /> <!--For relevant publications section-->
 		
-		<!-- class definitions for slider. need to shift to the main.css or a separate css file later on -->
+		<!-- class definitions for slider. need to shift to the main.css or a separate css file later on -->		
 		<style> 
+
+			/*This is for nav-bar*/
+			.bg-custom1{
+				background-color: #5385c1;
+			}
+			/*This is for images*/
+			.contain{
+				object-fit:contain;
+			}
+
 			* {box-sizing: border-box;}
 			body {font-family: Verdana, sans-serif;}
 			.mySlides {display: none;}
@@ -24,6 +36,7 @@
 			  max-width: 1000px;
 			  position: align-center;
 			  margin: auto;
+			  text-align: center;
 			}
 
 			/* Caption text */
@@ -63,10 +76,10 @@
 
 			/* Fading animation */
 			.fade {
-			  -webkit-animation-name: fade;
-			  -webkit-animation-duration: 1.5s;
+			  -webkit-animation-name: none;
+			  -webkit-animation-duration: 0s;
 			  animation-name: fade;
-			  animation-duration: 1.5s;
+			  animation-duration: 8.5s;
 			}
 
 			@-webkit-keyframes fade {
@@ -84,26 +97,44 @@
 			  .text {font-size: 11px}
 			}
 		</style>
-
+		
 	</head>
-	
 	<body class="subpage">
 
-		<!-- Header -->
-			<header id="header">
-				<div class="inner">
-					<a href="../index.html" class="logo">Impulsive MURI</a>
-					<nav id="nav">
-						<a href="../about.html">About</a>
-						<a href="../focusareas.html">Focus Areas</a>
-						<a href="../news.html">News</a>
-						<a href="../publications.html">Publications</a>
-						<a href="../members.html">Members</a>
-						<a href="../symposium2022.html">Symposium 2022</a>
-					</nav>
-					<a href="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span></a>
-				</div>
-			</header>
+		<!-- Navigation -->
+		<nav class="navbar navbar-expand-lg navbar-dark bg-custom1 shadow fixed-top">
+		  <div class="container">
+			<a class="navbar-brand" href="../index.html">Impulsive MURI</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+			  <span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarResponsive">
+			  <ul class="navbar-nav ms-auto">
+				<li class="nav-item">
+				  <a class="nav-link" href="../about.html">About</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" href="../focusareas.html">Focus Areas</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" href="../news.html">News</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" href="../publications.html">Publications</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="../members.html">Members</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="../symposium2022.html">Symposium 2022</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="../workshop2022.html">Workshop 2022</a>
+				</li>
+			  </ul>
+			</div>
+		  </div>
+		</nav>
 
 		<!-- Main -->
 			<section id="main" class="wrapper">
@@ -111,18 +142,24 @@
 					<header class="align-center">
 						<h2>Energy Flow</h2>
 					</header>
-
+					
 		<!-- Content -->
 					<div class="slideshow-container">
-						<div class="mySlides fade">
-							<div class="numbertext">1 / 1</div>
-							<img src="../images/focusareaimages/energy_flow/EFlowSchematic_v2.png"  alt="" class="center" style="width:100%">
+						<div class="mySlides">
+							<div class="numbertext">1 / 3</div>
+							<img src="../images/focusareaimages/energy_flow/midge_v1.gif"  alt="" class="center" style="width:auto;height:400px;">
 							<!-- <div class="text">Caption Text</div> -->
 						</div>
 
-						<div class="mySlides fade">
-							<div class="numbertext">2 / 2</div>
-							<img src="../images/focusareaimages/energy_flow/PhaseDiagram_LatchPaper.png" alt="" class="center" style="width:100%">
+						<div class="mySlides">
+							<div class="numbertext">2 / 3</div>
+							<img src="../images/focusareaimages/energy_flow/EFlowSchematic_v2.png"  alt="" class="center" style="width:auto;height:400px;">
+							<!-- <div class="text">Caption Text</div> -->
+						</div>
+
+						<div class="mySlides">
+							<div class="numbertext">3 / 3</div>
+							<img src="../images/focusareaimages/energy_flow/PhaseDiagram_LatchPaper.png" alt="" class="center" style="width:auto;height:400px;">
 							<!-- <div class="text">Caption Two</div> -->
 						</div>
 
@@ -132,14 +169,17 @@
 
 					<div style="text-align:center">
 					  <span class="dot"></span> 
-					  <span class="dot"></span> 	
+					  <span class="dot"></span> 
+					  <span class="dot"></span> 
+					  <!-- <span class="dot"></span>  -->
 					</div>						
 					
-					<br>
-					
+					<br>	
+
 				</div>
+				
 				<div class="inner">
-					<p>
+					<p> 
 						A hallmark of latch-mediated spring actuation (LaMSA) is impressively high mechanical power density achieved through spring-driven, unidirectional flow of energy. Stored elastic energy is rapidly transformed to the kinetic energy of a load mass or projectile, resulting in spectacular performance seen in both biological and engineered systems. LaMSA is defined by four fundamental components, motors, springs, latches, and load mass, and we have identified unique phases of LaMSA motion resulting from the transformation of energy between these components. Importantly, energy moving through a LaMSA mechanism can be lost from one phase to the next. Therefore, LaMSA function and performance is defined not just by the final delivery of energy to a load mass or projectile, but also by the efficiency of the energetic transformations that occur from one phase and one component to the next. This fundamental feature emphasizes the importance of real-world, tunable components for the design, control, and ultimately, function of LaMSA systems.
 					</p>
 				</div>
@@ -150,7 +190,8 @@
 						<div id="papers" class="col-xs-12"></div>
 					</div>	
 				</div>
-				
+			</section>
+			
 		<!-- Footer -->
 			<footer id="footer">
 				<div class="inner">
@@ -167,9 +208,9 @@
 			<script src="../assets/js/skel.min.js"></script>
 			<script src="../assets/js/util.js"></script>
 			<script src="../assets/js/main.js"></script>
-			
+
 			<!-- Image slider code -->
-			<script> 
+			<script>
 			var slideIndex = 0;
 			showSlides();
 
@@ -187,7 +228,7 @@
 			  }
 			  slides[slideIndex-1].style.display = "block";  
 			  dots[slideIndex-1].className += " active";
-			  setTimeout(showSlides, 3000); // Change image every 3 seconds
+			  setTimeout(showSlides, 5000); // Change image every 8.5 seconds
 			}
 			</script>
 			
@@ -238,6 +279,7 @@
 					let parent = document.getElementById("papers")
 					parent.appendChild(page)
 				}
+
 				loadPapers()
 				loadHeader("publications")
 			</script>	

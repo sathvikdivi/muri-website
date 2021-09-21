@@ -1,5 +1,12 @@
 const papers =  {
     y2021: [{
+		image: "images/",
+        authors: ["Emma Steinhardt", "Nak-seung P. Hyun", "Je-sung Koh", "Gregory Freeburn", "Michelle H. Rosen", "Fatma Zeynep Temel", "S.N. Patek", "Robert J. Wood"],
+        title: "A physical model of mantis shrimp for exploring the dyanmics of ultrafast systems", 
+        link: "https://www.pnas.org/content/118/33/e2026833118",
+        journal: "Proceedings of the National Academy of Sciences",
+        page:"Aug 2021, 118(33) e2026833118, doi: https://doi.org/10.1073/pnas.2026833118."
+    },{
         image: "images/",
         authors: ["Yongkin Kim", "Jay van den Berg", "Alfred Crosby"],
         title: "Autonomous snapping and jumping polymer gels", 
