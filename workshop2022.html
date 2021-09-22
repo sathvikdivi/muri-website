@@ -16,79 +16,48 @@
 		
 		<!-- class definitions for slider. need to shift to the main.css or a separate css file later on -->
 		<style> 
-			* {box-sizing: border-box;}
-			body {font-family: Verdana, sans-serif;}
-			.mySlides {display: none;}
-			img {vertical-align: middle;}
-
-			/* Slideshow container */
-			.slideshow-container {
-			  max-width: 1000px;
-			  position: align-center;
-			  margin: auto;
-			  text-align: center;
-			}
-
-			/* Caption text */
-			.text {
-			  color: #f2f2f2;
-			  font-size: 15px;
-			  padding: 8px 12px;
-			  position: absolute;
-			  bottom: 8px;
-			  width: 100%;
-			  text-align: center;
-			}
-
-			/* Number text (1/3 etc) */
-			.numbertext {
-			  color: #f2f2f2;
-			  font-size: 12px;
-			  padding: 8px 12px;
-			  position: absolute;
-			  top: 0;
-			}
-
-			/* The dots/bullets/indicators */
-			.dot {
-			  height: 15px;
-			  width: 15px;
-			  margin: 0 2px;
-			  background-color: #bbb;
-			  border-radius: 50%;
-			  display: inline-block;
-			  transition: background-color 0.6s ease;
-			}
-
-			.active {
-			  background-color: #717171;
-			}
-
-			/* Fading animation */
-			.fade {
-			  -webkit-animation-name: fade;
-			  -webkit-animation-duration: 1.5s;
-			  animation-name: fade;
-			  animation-duration: 1.5s;
-			}
-
-			@-webkit-keyframes fade {
-			  from {opacity: .4} 
-			  to {opacity: 1}
-			}
-
-			@keyframes fade {
-			  from {opacity: .4} 
-			  to {opacity: 1}
-			}
-
-			/* On smaller screens, decrease text size */
-			@media only screen and (max-width: 300px) {
-			  .text {font-size: 11px}
-			}
 			/*This is for nav-bar*/
 			.bg-custom1{
 				background-color: #5385c1;
+			}
+			
+			/*Definitions for collapsible content*/
+			.accordion .card-header:after {
+				font-family: 'FontAwesome';  
+				content: "\f068";
+				float:right;
+				align-items: center;
+			}
+			.accordion .card-header.collapsed:after {
+				/* symbol for "collapsed" panels */
+				content: "\f067";
+			}
+
+			/*Page Banner Image*/
+						.bgimage {
+				width:100%;
+				height:500px;
+				background: url(images/memberimages/);
+				background-repeat: no-repeat;
+				background-position: center;
+				background-size:cover;
+				background-attachment: fixed;
+			}
+			.bgimage h5 {
+				color:white;
+				text-shadow:2px 2px #333;
+			}
+			.overlay{
+				height: 500px;
+				width: 100%;
+				top: 0;
+				left: 0;
+				background: rgba(0,0,0,0);
+				color: white;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				flex-direction: column;
 			}
 		</style>
 
@@ -132,123 +101,259 @@
 		</nav>
 
 		<!-- Main -->
-			<section id="main" class="wrapper">
-				<div class="inner">
-					<header class="align-center">
-						<h2>Impulsive systems: Principles of rapid energy release and applications to unique robot behaviors</h2>
-						<h4>ICRA 2022| May 23-27 | Philadelphia (PA), USA</h4>
-					</header>
-					
+<!-- 		<section class="bgimage">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="overlay">
+<!-- 						<h2>Members</h2>
+						<p> Find the labs and individuals who are part of this MURI</p>
+						<p><a href="#" class="focus-area-select-all">All</a> | <a href="#" class="focus-area-selector">Professors</a> | <a href="#" class="focus-area-selector">Post-Docs</a> | <a href="#" class="focus-area-selector">Phd Students</a> 
+						| <a href="#" class="focus-area-selector">Alumni</a> </p> -->
+<!-- 					</div>
 				</div>
+			</div>
+		</section> --> 
+		
+		<section id="main" class="wrapper">
+			<div class="inner">
+				<header class="align-center">
+					<h2>Impulsive systems: Principles of rapid energy release and applications to unique robot behaviors</h2>
+					<h4>ICRA 2022| May 23-27 | Philadelphia (PA), USA</h4>
+				</header>
 				
-				<div class = "inner">	
-					<h2 class="align-left">Overview</h2>
-					<p>
-						Recent research in the interdisciplinary area of impulsive systems (both natural and synthetic) has led to the establishment of the “Latch Mediated Spring Actuation (LaMSA)” framework for analyzing such ultra-fast systems in both biology and engineering. Characteristics of systems operating within this framework include the slow storage of potential energy followed by its rapid release, controlled by a latch. While seemingly straightforward, the mechanics, materials, and control considerations for such rapid energy release form the basis of LaMSA, with significant potential implications for robotics, especially for behaviors such as jumping, throwing, and striking. We propose a workshop that focuses on the integration of LaMSA principles into demonstration devices that cover these unprecedented capabilities and serve to further motivate a broader community to adopt these principles into their hardware designs. The workshop will be structured as a series of exhibitions designed to showcase our findings and further motivate the study of impulsive systems more broadly. These exhibitions comprise of four demonstration categories: (1) jumping; (2) shot-put; (3) archery; and (4) striking. For each of these demonstration categories we will have weight classes (i.e., 1-10 gram, 10-50 gram, above 100 gram, etc.). Furthermore, system integration is encouraged by awarding bonuses to devices based on various degrees of autonomy (eg. power autonomy - untethered). Beyond the attention that this will generate, these exhibitions will also serve as a quantitative experiment that can be structured to compare, for example, energy flow control for various classes of latches, and novel control systems approaches for aperiodic, hybrid dynamic systems.
-					</p>					
-				</div>
-				
-				<div class = "inner">	
-					<h2 class="align-left">Schedule</h2>
-					<p>Tentative schedule</p>
-					<table style="padding-left: 11%; padding-right: 11%; " class="TFtable">
-					   <tr>
-						  <td style="width:70px">8:30am</td>
-						  <td style="width:400px">Demonstration 1 (striking) setup</td>
-					   </tr>
-					   <tr>
-						  <td style="width:70px">9:00am</td>
-						  <td style="width:400px">Introduction</td>						
-					   </tr>
-					   <tr>
-						  <td style="width:70px">9:30am</td>
-						  <td style="width:400px">Lightning talks and mini-event 1 (striking)</td>						
-					   </tr>
-					   <tr>
-						  <td style="width:70px">10:30am</td>
-						  <td style="width:400px">Coffee break and demonstration 2 (jumping) setup</td>						
-					   </tr>
-					   <tr>
-						  <td style="width:70px">11:00am</td>
-						  <td style="width:400px">Lightning talks and mini-event 2 (jumping)</td>						
-					   </tr>	
-					   <tr>
-						  <td style="width:70px">12:30pm</td>
-						  <td style="width:400px">Lunch break and demonstration 3 (shot-put) setup</td>						
-					   </tr>
-					   <tr>
-						  <td style="width:70px">1:30pm</td>
-						  <td style="width:400px">Lightning talks and mini-event 3 (shot-put)</td>						
-					   </tr>					  
-					   <tr>
-						  <td style="width:70px">2:30pm</td>
-						  <td style="width:400px">Coffee break and demonstration 4 (archery) setup</td>						
-					   </tr>
-					   <tr>
-						  <td style="width:70px">3:00pm</td>
-						  <td style="width:400px">Lightning talks and mini-event 4 (archery)</td>						
-					   </tr>					   
-					   <tr>
-						  <td style="width:70px">4:00pm</td>
-						  <td style="width:400px">Group discussion and LaMSA design exercise</td>						
-					   </tr>
-					   <tr>
-						  <td style="width:70px">5:00pm</td>
-						  <td style="width:400px">Wrap up and conclude</td>						
-					   </tr>
-<!-- 					   <tr>
-						  <td style="width:400px">Session 2</td>
-						  <td>
-						  Invited Talks
-						    <ul>
-								<li>Latch-Mediated Spring Actuation (LaMSA) Framework</li>
-								<li>LaMAs in Biology</li>
-							</ul>
-						  </td>
-					   </tr> -->
+			</div>
+			
+			<!-- Overview -->
+			<div class="inner">
+				<h2 class="align-left">Overview</h2>
+				<p> Recent research in the interdisciplinary area of impulsive systems (both natural and synthetic) has led to the establishment of the “Latch Mediated Spring Actuation (LaMSA)” framework for analyzing such ultra-fast systems in both biology and engineering. Characteristics of systems operating within this framework include the slow storage of potential energy followed by its rapid release, controlled by a latch. While seemingly straightforward, the mechanics, materials, and control considerations for such rapid energy release form the basis of LaMSA, with significant potential implications for robotics, especially for behaviors such as jumping, throwing, and striking. We propose a workshop that focuses on the integration of LaMSA principles into demonstration devices that cover these unprecedented capabilities and serve to further motivate a broader community to adopt these principles into their hardware designs. The workshop will be structured as a series of exhibitions designed to showcase our findings and further motivate the study of impulsive systems more broadly. These exhibitions comprise of four demonstration categories: (1) jumping; (2) shot-put; (3) archery; and (4) striking. For each of these demonstration categories we will have weight classes (i.e., 1-10 gram, 10-50 gram, above 100 gram, etc.). Furthermore, system integration is encouraged by awarding bonuses to devices based on various degrees of autonomy (eg. power autonomy - untethered). Beyond the attention that this will generate, these exhibitions will also serve as a quantitative experiment that can be structured to compare, for example, energy flow control for various classes of latches, and novel control systems approaches for aperiodic, hybrid dynamic systems.</p>	
+			</div>
+			
+			<!-- Schedule -->
+			<div class="inner">
+				<h2 class="align-left">Program</h2>
+				<h3>Proposed schedule</h3>
+				<div class="table-responsive">
+					<table class="table table-striped">
+						<thead>
+							<tr>
+								<th scope="col" style="color:#6C757D">Time</th>
+								<th scope="col" style="color:#6C757D">Events</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td scope="row" style="color:#6C757D">08:30am</td>
+								<td style="color:#6C757D"> Demonstration 1 (striking) setup</td>
+							</tr>
+							<tr>
+								<td scope="row" style="color:#6C757D">09:00am</td>
+								<td style="color:#6C757D"> Introduction</td>
+							</tr>
+							<tr>
+								<td scope="row" style="color:#6C757D">09:30am</td>
+								<td style="color:#6C757D"> Lightning talks and mini-event 1 (striking)</td>
+							</tr>
+							<tr>
+								<td scope="row" style="color:#6C757D">10:30am</td>
+								<td style="color:#6C757D"> Coffee break and demonstration 2 (jumping) setup</td>
+							</tr>
+							<tr>
+								<td scope="row" style="color:#6C757D">11:00am</td>
+								<td style="color:#6C757D"> Lightning talks and mini-event 2 (jumping)</td>
+							</tr>
+							<tr>
+								<td scope="row" style="color:#6C757D">12:30pm</td>
+								<td style="color:#6C757D"> Lunch break and demonstration 3 (shot-put) setup</td>
+							</tr>
+							<tr>
+								<td scope="row" style="color:#6C757D">01:30pm</td>
+								<td style="color:#6C757D"> Lightning talks and mini-event 3 (shot-put)</td>
+							</tr>
+							<tr>
+								<td scope="row" style="color:#6C757D">02:30pm</td>
+								<td style="color:#6C757D"> Coffee break and demonstration 4 (archery) setup</td>
+							</tr>
+							<tr>
+								<td scope="row" style="color:#6C757D">03:00pm</td>
+								<td style="color:#6C757D"> Lightning talks and mini-event 4 (archery)</td>
+							</tr>	
+							<tr>
+								<td scope="row" style="color:#6C757D">04:00pm</td>
+								<td style="color:#6C757D"> Group discussion and LaMSA design exercise</td>
+							</tr>
+							<tr>
+								<td scope="row" style="color:#6C757D">05:00pm</td>
+								<td style="color:#6C757D"> Wrap up and conclude</td>
+							</tr>							
+						</tbody>
 					</table>
 				</div>
-
-<!-- 				<div class = "inner">	
-					<h2 class="align-left">Invited Speakers/Talks</h2>
-					<p>
-						To be up soon. Please check back later.
-					</p>					
-				</div>		 -->		
-
-				<div class="inner">
-					<h2 class="align-left">Demonstration Details</h2>
-					<p>
-						To be up soon. Please check back later.
+				<h3>Program specifics</h3>
+				<p>
+					<h4 style="margin-left:2em">Mini-event demonstrations:</h4>
+					<p style="margin-left:2em">
+						During the mini-events, each participant will have an opportunity to showcase their system. The participants will have their system perform the event-specific task one at a time. Event staff will record each demonstration with both a standard HD video camera and a high speed camera. The HD video camera will be streaming to a larger monitor so that the audience can observe the system’s finer details. Meanwhile the high speed camera will be used to better capture the high speed motions that accompany LaMSA behaviors. These videos will need processing before they are displayed to the audience. 
 					</p>
-				</div>
-
-				<div class = "inner">	
-					<h2 class="align-left">Organizers</h2>
-					<p>
+					<h4 style="margin-left:2em">Breaks:</h4>
+					<p style="margin-left:2em">
+						Before each mini-event we will have a coffee/lunch break. During these breaks, participants will have an opportunity to network and discuss previous events. Meanwhile, participants for future mini-events will have the chance to set up their system. Throughout this entire time, monitors around the event will display a montage of videos of various biological and robotic LaMSA systems in operation. 
+					</p>
+					<h4 style="margin-left:2em">Group discussion and LaMSA design exercise</h4>
+					<p style="margin-left:2em">
+						One of the objectives of this workshop is to motivate and guide the exploration of latch mediated spring actuation. While the demonstrations throughout most of the day serve to motivate the investigation of LaMSA, the LaMSA Design Exercise aims to guide the exploration of LaMSA more broadly. This exercise will focus on two topics for discussion: (1) Evaluation of the workshop entries according to the criteria for each of the mini-events and (2) discussion of the design of future LaMSA systems. First, by this point in the day, the systems showcased during the mini-events will have been evaluated and scored according to the scoring guidelines above. The organizers will lead the participants in a discussion of what worked well, what didn’t, and what was learned from each of the mini-events. We will also draw comparisons between these systems and biological LaMSA systems that serve as inspiration. In addition, we will discuss fundamental differences between biological and synthetic LaMSA systems, and how we can devise more universal metrics that quantify performance in both realms.
+						Second, we will discuss how to evolve the designs of future LaMSA robots in the face of practical constraints on the constituent components. In order to evaluate engineered LaMSA systems, we need to standardize on measurements of LaMSA components including the motor, spring, and latch. However, for many of the systems demonstrated throughout the workshop, this is not possible. For example, some designs require external energy (e.g., manual human intervention) to reset, load, and/or trigger their systems. Before we can compare these systems to their biological counterparts, the amount of energy loaded into the system must be considered. Our objective of this exercise is to make participants understand the levels of tuning between LaMSA components in fully contained and repeatable biological systems.   
+					</p>
+				</p>
+			</div>
+			
+			<div class="inner">
+				<h2 class="align-left">Demonstration Details</h2>
+				<p>
+					The proposed workshop will consist of a set of mini-events around different LaMSA behaviors (jumping, throwing, striking) that will include short talks, demonstrations, and evaluations. The workshop will conclude with a group discussion to synergize the lessons learned and opportunities in both biological study and synthetic LaMSA robot design. This concluding portion will take the form of a structured design event where participants are provided with hypothetical constraints for motors, springs, and latches and asked to produce guidelines for how to create effective LaMSA mechanisms and to adapt their current designs towards higher performance
+				</p>
+				
+				<ol type="A" style="margin-left:2em">
+					<h3>Expected Outcomes</h3>
+					<ul>
+						<li style="margin-left:2em"> Integrate LaMSA principles into demonstrative systems that exhibit unprecedented capabilities for a variety of behaviors such as jumping, archery, striking, shot put, etc. </li>
+						<li style="margin-left:2em"> Disseminate the LaMSA principles accumulated by the robotics community so that researchers from different disciplines can build on our framework. </li>
+						<li style="margin-left:2em"> Showcase our findings in the field of LaMSA and amass experimental data to motivate the study of impulsive systems more broadly. And </li>
+						<li style="margin-left:2em"> Demonstrate novel control strategies for aperiodic, hybrid dynamic systems. </li>
+					</ul>
+					
+					<br>
+					
+					<h3>Workshop Guidelines</h3>
+					<p>Each workshop participant will submit at least one entry. Each entry will have two components, a lightning talk and a demonstration.
 						<ul>
-							<li> <a href="members/wood.html">Prof. Robert Wood</a>, School of Engineering and Applied Sciences, Harvard University </li>
-							<li> <a href="members/bergbreiter.html">Prof. Sarah Bergbreiter</a>, Department of Mechanical Engineering, Carnegie Mellon University</li>
-							<li> <a href="members/patek.html">Prof. Sheila Patek</a>, Department of Biology, Duke University</li>
+							<li style="margin-left:2em">
+								Lightning talks: We require each entry to be accompanied with a short five minute talk describing the following:
+								<ul>
+									<li style="margin-left:2em"> Design history and challenges </li>
+									<li style="margin-left:2em"> Relevant performance metrics and data(if any) </li>
+									<li style="margin-left:2em"> Specific information on LaMSA components such as the projectile or moving body mass and material properties of the spring </li>
+									<li style="margin-left:2em"> What past work, from the robotics community or outside (biological or otherwise), has inspired or influenced your designs? </li>
+								</ul>											
+							</li>
+							<li style="margin-left:2em">
+								Event-specific demonstrations:
+								<ul>
+									<li style="margin-left:2em"> 200 gram mass upper limit  </li>
+									<li style="margin-left:2em"> Energy density limits: for safety, we are not allowing chemical explosives </li>												
+								</ul>
+							</li>
 						</ul>
-					</p>					
-				</div>				
-
-				<div class = "inner">	
-					<h2 class="align-left">Registration</h2>
+					</p>
+					
+					<h3>Event-Specific Metrics</h3>
 					<p>
-						Coming soon. Please check back later! 
-						<!-- <iframe src="https://forms.gle/q8taCcQSKVDCi8Df9" width="640" height="724" frameborder="0" marginheight="0" marginwidth="0" display:block>Loading…</iframe> -->
-					</p>					
-				</div>
+						A single entry will only compete in one of the sub-categories below (e.g., only long jump). However, you can create multiple entries for the same robot to compete in multiple separate events. Each event will be scored and evaluated relative to other entries in that same sub-category subject to the metrics defined below. There will be performance-based evaluation and autonomy-based evaluation. For autonomy, each entry will be evaluated based on manual vs autonomous energy loading, manual vs autonomous energy release, manual vs autonomous trajectory control, etc. 
+						<h4 style="margin-left:2em">Jumping</h4>
+						<ul style="margin-left:2em">
+							<li style="margin-left:2em">
+								Distance
+								<ul>
+									<li style="margin-left:2em">High jump: jump height/body height</li>
+									<li style="margin-left:2em">Long jump: jump distance/body length</li>
+									<li style="margin-left:2em">Absolute jump distance/height</li>												
+								</ul>
+							</li>
+							<li style="margin-left:2em">
+								Control
+								<ul>
+									<li style="margin-left:2em">Target jump distance will be provided before the event</li>
+									<li style="margin-left:2em">Long jump example: Jump horizontally as close to 1m distance as possible</li>
+									<li style="margin-left:2em">High jump example: Jump vertically as close to 1m distance as possible and land as close as possible to the take-off site</li>												
+								</ul>											
+							</li>
+						</ul>
+						<br>
+						<h4 style="margin-left:2em">Shotput</h4>
+						<ul style="margin-left:2em">
+							<li style="margin-left:2em">
+								Participants will be supplied with spherical steel ball bearings according to the weight class of the device. The following are the specifications of the spherical steel ball bearings that shall be provided:
+								<ul>
+									<li style="margin-left:2em">For &lt;10g systems: 2.5mm diameter steel ball(0.5g)</li>
+									<li style="margin-left:2em">For 10-50g systems: 4.36mm diameter steel ball(2.5g)</li>
+									<li style="margin-left:2em">For 50-100g systems: 5.5mm diameter steel ball(5g)</li>			
+									<li style="margin-left:2em">For &gt;100g systems: 7mm diameter steel ball(10g)</li>												
+								</ul>
+							</li>
+							<li style="margin-left:2em">Distance normalized by mass or characteristic length</li>
+							<li style="margin-left:2em">Absolute distance</li>							
+						</ul>									
+						<br>
+						<h4 style="margin-left:2em">Archery</h4>
+						<ul style="margin-left:2em">
+							<li style="margin-left:2em">
+								Participants may create/provide their own projectile. However, participants are responsible for safety considerations for the projectiles they use.
+							</li>	
+							<li style="margin-left:2em">
+								Distance
+								<ul>
+									<li style="margin-left:2em">Distance of projectile from target normalized to body mass or characteristic mass</li>
+									<li style="margin-left:2em">Absolute distance</li>
+								</ul>
+							</li>	
+							<li style="margin-left:2em">
+								Control
+								<ul>
+									<li style="margin-left:2em">Range of possible target distances will be provided before the event (For example, 0.5m to 5m)</li>
+									<li style="margin-left:2em">Contestants will be given the target distance during the event and can make changes to their entry accordingly (e.g., swap out springs or other components)</li>
+								</ul>
+							</li>
+						</ul>	
+						<br>
+						<h4 style="margin-left:2em">Striking</h4>
+						<ul style="margin-left:2em">
+							<li style="margin-left:2em">Force output normalized by mass</li>	
+							<li style="margin-left:2em">Measured directly by load cell</li>
+						</ul>	
+					</p>
 
-				<div class = "inner">	
-					<h2 class="align-left">Contact</h2>
+					<h3>Logistics</h3>
 					<p>
-						For more information, please contact Prof. Robert Wood <a href = "mailto: rjwood@seas.harvard.edu">(rjwood@seas.harvard.edu)</a>
-					</p>					
-				</div>		
+						The organizers will provide the following:
+						<ul>
+							<li style="margin-left:2em">High speed camera, HD camera, and lighting</li>
+							<li style="margin-left:2em">Load cell and data acquisition system</li>
+							<li style="margin-left:2em">Power supply</li>
+							<li style="margin-left:2em">Targets and measurement tools</li>
+							<li style="margin-left:2em">Steel ball bearings for shotput</li>
+							<li style="margin-left:2em">Various stands and tools</li>
+						</ul>
+					</p>	
+				</ol>	
+			</div>
 
+			<div class = "inner">	
+				<h2 class="align-left">Organizers</h2>
+				<p>
+					<ul>
+						<li> <a href="members/wood.html">Prof. Robert Wood</a>, School of Engineering and Applied Sciences, Harvard University </li>
+						<li> <a href="members/bergbreiter.html">Prof. Sarah Bergbreiter</a>, Department of Mechanical Engineering, Carnegie Mellon University</li>
+						<li> <a href="members/patek.html">Prof. Sheila Patek</a>, Department of Biology, Duke University</li>
+					</ul>
+				</p>					
+			</div>				
+
+			<div class = "inner">	
+				<h2 class="align-left">Registration</h2>
+				<p>
+					Coming soon. Please check back later! 
+					<!-- <iframe src="https://forms.gle/q8taCcQSKVDCi8Df9" width="640" height="724" frameborder="0" marginheight="0" marginwidth="0" display:block>Loading…</iframe> -->
+				</p>					
+			</div>
+
+			<div class = "inner">	
+				<h2 class="align-left">Contact</h2>
+				<p>
+					For more information, please contact Prof. Robert Wood <a href = "mailto: rjwood@seas.harvard.edu">(rjwood@seas.harvard.edu)</a>
+				</p>					
+			</div>		
+		</section>	
+		
 		<!-- Footer -->
 			<footer id="footer">
 				<div class="inner">
@@ -265,7 +370,10 @@
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-			
+			<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+			<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
 			<!-- Image slider code -->
 			<script> 
 			var slideIndex = 0;
