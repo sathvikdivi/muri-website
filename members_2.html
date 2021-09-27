@@ -55,6 +55,14 @@
 				justify-content: center;
 				flex-direction: column;
 			}
+			
+			/*This is for card images*/
+			.card-img-top {
+				width: 100%;
+				height: 30vw;
+				object-fit: cover;
+				align-items:center;
+			}
 		</style>	
 	</head>
 	<body class="subpage">
@@ -121,68 +129,72 @@
 		<!--Professors-->
 			<section id="focus-areas" class="special">
 			<div class="col-xs-12"> <header> <h3> Professors </h3> </header> </div>
-			<div class="flex flex-4">
-				<div class="box area-professors">
-					<div class="image">
-						<img class="contain" src="images/memberimages/SheilaPatek.jpg" alt="Person 1" width="200" height="200"/>
+			
+			<div class="container-fluid">
+				<div class="row row-cols-2 row-cols-md-4 g-4">
+					<div class="col">
+						<div class="card h-100">
+							<img class="card-img-top" src="images/memberimages/SheilaPatek.jpg" alt="Person 1"/>
+							<div class="card-body">
+								<h4 class="card-title">Sheila Patek</h4>
+								<p class="card-text">Duke University</p>
+								<a href="members/patek.html" class="button">Visit</a>
+							</div>
+						</div>
 					</div>
-					<h3>Sheila Patek</h3>
-					<p>Duke <br> University</p>
-					<footer>
-						<a href="members/patek.html" class="button">Visit</a>
-					</footer>
-				</div>
-				<div class="box area-professors">
-					<div class="image">
-						<img class="contain" src="images/memberimages/MannyAzizi.jpg" alt="Person 2" width="200" height="200"/>
+					<div class="col">
+						<div class="card h-100">
+							<img class="card-img-top" src="images/memberimages/MannyAzizi.jpg" alt="Person 2"/>
+							<div class="card-body">
+								<h4 class="card-title">Manny Azizi</h4>
+								<p class="card-text">U.C. Irvine</p>
+								<a href="members/azizi.html" class="button">Visit</a>
+							</div>
+						</div>
 					</div>
-					<h3>Manny Azizi</h3>
-					<p> University of California <br> Irvine</p>
-					<footer>
-						<a href="members/azizi.html" class="button">Visit</a>
-					</footer>
-				</div>
-				<div class="box area-professors">
-					<div class="image">
-						<img class="contain" src="images/memberimages/sbergbre.png" alt="Person 3" width="200" height="200"/>
-					</div>
-					<h3>Sarah Bergbreiter</h3>
-					<p>Carnegie Mellon <br> University</p>
-					<footer>
-						<a href="members/bergbreiter.html" class="button">Visit</a>
-					</footer>
-				</div>
-				<div class="box area-professors">
-					<div class="image">
-						<img class="contain" src="images/memberimages/AlfredCrosby.png" alt="Person 4" width="200" height="200"/>
-					</div>
-					<h3>Al Crosby</h3>
-					<p>University of Mass. <br> Amherst </p>
-					<footer>
-						<a href="members/crosby.html" class="button">Visit</a>
-					</footer>
-				</div>
-				<div class="box area-professors">
-					<div class="image">
-						<img class="contain" src="images/memberimages/rwood.jpg" alt="Person 5" width="200" height="200"/>
-					</div>
-					<h3>Robert Wood</h3>
-					<p>Harvard <br> University</p>
-					<footer>
-						<a href="members/wood.html" class="button">Visit</a>
-					</footer>
-				</div>
-				<div class="box area-professors">
-					<div class="image">
-						<img class="contain" src="images/memberimages/GregSutton.jpg" alt="Person 6" width="200" height="200"/>
-					</div>
-					<h3>Greg Sutton</h3>
-					<p> University of Lincoln <br> (UK) </p>
-					<footer>
-						<a href="members/sutton.html" class="button">Visit</a>
-					</footer>
+					<div class="col">
+						<div class="card h-100">
+							<img class="card-img-top" src="images/memberimages/sbergbre.png" alt="Person 3"/>
+							<div class="card-body">
+								<h4 class="card-title">Sarah Bergbreiter</h4>
+								<p class="card-text">Carnegie Mellon University</p>
+								<a href="members/bergbreiter.html" class="button">Visit</a>
+							</div>
+						</div>
+					</div>	
+					<div class="col">
+						<div class="card h-100">
+							<img class="card-img-top" src="images/memberimages/AlfredCrosby.png" alt="Person 4"/>
+							<div class="card-body">
+								<h4 class="card-title">Al Crosby</h4>
+								<p class="card-text">University of Mass. Amherst </p>
+								<a href="members/crosby.html" class="button">Visit</a>
+							</div>
+						</div>
+					</div>	
+					<div class="col">
+						<div class="card h-100">
+							<img class="card-img-top" style="object-fit:contain" src="images/memberimages/rwood.jpg" alt="Person 5"/>
+							<div class="card-body">
+								<h4 class="card-title">Robert Wood</h4>
+								<p class="card-text">Harvard University</p>
+								<a href="members/wood.html" class="button">Visit</a>
+							</div>
+						</div>
+					</div>	
+					<div class="col">
+						<div class="card h-100">
+							<img class="card-img-top" src="images/memberimages/GregSutton.jpg" alt="Person 6"/>
+							<div class="card-body">
+								<h4 class="card-title">Greg Sutton</h4>
+								<p class="card-text">University of Lincoln (UK)</p>
+								<a href="members/sutton.html" class="button">Visit</a>
+							</div>
+						</div>
+					</div>						
 				</div>
 			</div>
+			
 			<hr style="height:2px; border-width=0; background-color:#5385c1; ">
 			</section>
 
@@ -192,7 +204,7 @@
 			<div class="flex flex-4">
 				<div class="box area-post-docs">
 					<div class="image">
-						<img class="contain" src="images/memberimages/Frog.png" alt="Person 2" width="200" height="200"/>
+						<img class="contain" src="images/memberimages/Frog_v2.png" alt="Person 2" width="150" height="200"/>
 					</div>
 					<h3>Suzzane Cox</h3>
 					<p>Duke University</p>
