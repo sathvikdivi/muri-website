@@ -30,6 +30,6 @@ const papers =  {
         title: "The principles of cascading power limits in small, fast biological and engineered systems.",
         link: "https://science.sciencemag.org/content/360/6387/eaao1082.abstract",
         journal: "Science",
-        page:"360, no. 6387 (2018): eaao1082."
+        page:"360, no. 6387: eaao1082."
     }
 ]}

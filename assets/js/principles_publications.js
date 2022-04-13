@@ -1,6 +1,14 @@
 const papers =  {
 
- y2019: [{
+ y2021: [{
+		image: "images/",
+        authors: ["Emma Steinhardt", "Nak-seung P. Hyun", "Je-sung Koh", "Gregory Freeburn", "Michelle H. Rosen","Fatma Zeynep Temel","S.N. Patek","Robert J Wood"],
+        title: "A physical model of mantis shrimp for exploring the dynamics of ultrafast systems",
+        link: "https://www.pnas.org/doi/10.1073/pnas.2026833118",
+        journal: "Proceedings of the National Academy of Sciences",
+        page:"118(33) e2026833118."
+	}
+], y2019: [{
         image: "images/",
         authors: ["S.J. Longo", "S.M. Cox", "E. Azizi", "M. Ilton", "J.P. Olberding", "R. St Pierre", "S.N. Patek"],
         title: "Beyond power amplification: latch-mediated spring actuation is an emerging framework for the study of diverse elastic systems",
@@ -15,6 +23,6 @@ const papers =  {
         title: "The principles of cascading power limits in small, fast biological and engineered systems.",
         link: "https://science.sciencemag.org/content/360/6387/eaao1082.abstract",
         journal: "Science",
-        page:"360, no. 6387 (2018): eaao1082."
+        page:"360, no. 6387: eaao1082."
     }
 ]}
